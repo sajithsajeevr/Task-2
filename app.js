@@ -11,6 +11,7 @@ function removeDuplicates(e){
     let noDuplicates=array.filter((item,pos,return1)=>{return return1.indexOf(item)==pos;});
     noDuplicates.forEach(element=>noduplicatearray.innerHTML+=`<li>${element}</li>`);
     document.getElementById('bttn').style.display='none';
-    document.getElementById('noduplicatearrayhead').innerHTML="<em>Array with no Duplicate Elements<em>";
+    document.getElementById('noduplicatearrayhead').innerHTML="<em>Array after Removing Duplicate Elements<em>";
+    document.getElementById('heading').innerHTML="<em>Given Array<em>";
     e.preventDefault();
 }
